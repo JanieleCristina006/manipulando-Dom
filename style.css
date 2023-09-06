@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 204, 199);
+}
+
+
+
+.image-container {
+    text-align: center;
+    transition: background-color 0.3s; 
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    border: rgb(227, 216, 216) solid;
+    margin-top: 100px;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.selected {
+    background-color: #c34747; 
+}
+
+.selected-black {
+    background-color: #4f2e2e; 
+}
+
+.image-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+.image-container label {
+    font-weight: bold;
+    color: aliceblue;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
+@media(min-width:201px) and (max-width: 500px){
+   
+    section{
+        display: flex;
+        justify-content: center;
+    }
+   
+   
+    .image-container {   
+        width: 300px;
+        height: 430px;
+       margin-top: 20px;
+    }
+}
